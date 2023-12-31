@@ -1,7 +1,5 @@
 import java.io.*;
 import java.io.IOException;
-import java.lang.InterruptedException;
-
 
 public class textFile extends File {
 	public static int id = 1;
