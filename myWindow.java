@@ -15,11 +15,26 @@ public class myWindow extends JFrame{
 
 		JLabel head = new JLabel("Your notes");
 		head.setText("Your notes");
-		head.setForeground(Color.white);
+		head.setForeground(Color.yellow);
 		head.setFont(new Font("MV Boli", Font.BOLD, 20));
 		// head.setIcon(image);
 		head.setHorizontalTextPosition(JLabel.CENTER); // set text at LEFT, RIGHT, CENTER of imageicon
 		head.setVerticalTextPosition(JLabel.TOP);
 		this.add(head);
+
+		JTextField t = new JTextField("This is JTextField");
+		t.setFont(new Font("MV Boli", Font.ITALIC, 20));
+		// t.setForeground(Color.white);
+		t.setSize(200, 200);
+		
+		JPanel p = new JPanel();
+		p.add(head);
+		p.add(t);
+		p.setBackground(Color.darkGray);
+		this.add(p);
+
+		JLabel label1 = new JLabel(t.getText());
+		label1.setForeground(Color.green);
+		p.add(label1);
 	}
 }
